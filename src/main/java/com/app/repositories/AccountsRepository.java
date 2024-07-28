@@ -10,6 +10,4 @@ public interface AccountsRepository extends JpaRepository<Accounts, Integer> {
 	
 	Accounts findByCustomerId(int customerId);
 	
-	Accounts findById(int id);
-
 }
