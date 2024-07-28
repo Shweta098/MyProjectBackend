@@ -9,5 +9,7 @@ import com.app.pojo.Accounts;
 public interface AccountsRepository extends JpaRepository<Accounts, Long> {
 	
 	Accounts findByCustomerId(int customerId);
+	
+	Accounts findById(int id);
 
 }
