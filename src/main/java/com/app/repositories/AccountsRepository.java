@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import com.app.pojo.Accounts;
 
 @Repository
-public interface AccountsRepository extends JpaRepository<Accounts, Long> {
+public interface AccountsRepository extends JpaRepository<Accounts, Integer> {
 	
 	Accounts findByCustomerId(int customerId);
 	
